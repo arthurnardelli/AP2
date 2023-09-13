@@ -1,0 +1,62 @@
+<html>
+    
+<head>
+    <title>Exemplo de Alerta de Boas-Vindas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffac4e;
+        }
+        </style>
+</head>
+<body>
+
+<script>
+    window.onload = function() {
+        alert("Bem-vindo ao nosso site! Clique em Ok e faça já o seu cadastro.");
+    }
+</script>
+
+</body>
+
+<head>
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+
+<h1>Cadastro de Usuário</h1>
+
+<form id="cadastro-form">
+    <label for="nomeUsuario">Nome de Usuário:</label>
+    <input type="text" id="nomeUsuario" name="nomeUsuario" required><br><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required><br><br>
+
+    <button type="button" id="enviarCadastro">Cadastrar</button>
+</form>
+
+<div id="mensagem"></div>
+
+<script>
+    document.getElementById("enviarCadastro").addEventListener("click", function() {
+        var nomeUsuario = document.getElementById("nomeUsuario").value;
+        var senha = document.getElementById("senha").value;
+        var mensagemErro = "";
+
+        if (nomeUsuario === "" || senha === "") {
+            mensagemErro = "Por favor, preencha todos os campos.";
+        } else {
+            
+            alert("Cadastro realizado com sucesso, Bem vindo! " + nomeUsuario);
+            window.location.href = "inicio.html";
+        }
+
+        
+    });
+</script>
+
+</body>
+</html>
