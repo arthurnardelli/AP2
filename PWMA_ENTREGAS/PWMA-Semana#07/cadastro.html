@@ -1,0 +1,117 @@
+<html>
+    
+<head>
+    <title>boas vindas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffac4e;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .online {
+            color: green;
+        }
+        .offline {
+            color: red;
+        }
+        </style>
+</head>
+<body>
+
+<script>
+    window.onload = function() {
+        alert("Bem-vindo ao nosso site! Clique em Ok e faça já o seu cadastro.");
+    }
+</script>
+
+</body>
+
+<head>
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+
+<h1>Cadastro de Usuário</h1>
+
+<form id="cadastro-form">
+    <input type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Usuário" required><br><br>
+    
+    <input type="password" id="senha" name="senha" placeholder="Senha" required><br><br>
+
+    <button type="button" id="enviarCadastro">Cadastrar</button>
+</form>
+
+<div id="mensagem"></div>
+
+<script>
+    document.getElementById("enviarCadastro").addEventListener("click", function() {
+        var nomeUsuario = document.getElementById("nomeUsuario").value;
+        var senha = document.getElementById("senha").value;
+        var mensagemErro = "";
+
+        if (nomeUsuario === "" || senha === "") {
+            mensagemErro = "Por favor, preencha todos os campos.";
+        } else {
+            
+            alert("Cadastro realizado com sucesso, Bem vindo! " + nomeUsuario);
+            window.location.href = "inicio.html";
+        }
+
+        
+    });
+</script>
+<h1>Clientes do Aquafish</h1>
+    <ul id="cliente-lista">
+        
+    </ul>
+
+    <script>
+        
+        const dadosClientes = [
+            { id: 1, tipoLogin: 'jao', situacao: 'Online' },
+            { id: 2, tipoLogin: 'paulin', situacao: 'Offline' },
+            { id: 3, tipoLogin: 'enzin', situacao: 'Online' },
+            { id: 4, tipoLogin: 'arthurzin', situacao: 'Online' },
+            { id: 5, tipoLogin: 'eduardin', situacao: 'Offline' }
+        ];
+
+    
+        function exibirClientes() {
+            const lista = document.getElementById('cliente-lista');
+
+            
+            lista.innerHTML = '';
+
+            
+            dadosClientes.forEach(cliente => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <span>ID: ${cliente.id}</span>
+                    <span>Tipo de Login: ${cliente.tipoLogin}</span>
+                    <span class="${cliente.situacao.toLowerCase()}">${cliente.situacao}</span>
+                `;
+                lista.appendChild(li);
+            });
+        }
+
+        
+        window.onload = exibirClientes;
+    </script>
+</body>
+</html>
