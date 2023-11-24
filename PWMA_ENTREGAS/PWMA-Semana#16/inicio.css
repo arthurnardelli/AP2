@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(41, 39, 39, 0.575); /* Amarelo-alaranjado para o fundo */
+
+    
+}
+
+header {
+    background-color: rgb(41, 39, 39); /* Preto para o cabeçalho */
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+#foto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-230%, -50%);
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff; /* Texto branco para os links no cabeçalho */
+    padding: 0 15px;
+}
+
+header a:not(:last-child) {
+    border-right: 1px solid #06d6a0; /* Teal para a separação entre links */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.fish-card {
+    flex: 0 0 calc(31% - 20px); /* Adjusted card width */
+    background-color: white; /* Fundo branco para os cartões */
+    padding: 15px; /* Increased padding */
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #06d69ea8; /* Added box shadow with correct syntax */
+}
+
+.fish-card img { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 80%; /* ou 90% */
+    height: auto; 
+    margin: auto;
+}
+
+
+
+
+.fish-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333; 
+    
+}
+
+.fish-price {
+    font-size: 1.5rem;
+    color: #108d00; 
+    margin-top: 10px;
+}
+
+  
+  .box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto; 
+}

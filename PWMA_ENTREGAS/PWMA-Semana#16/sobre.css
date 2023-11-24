@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+background-color: rgb(48, 71, 82);
+font-family: "Trebuchet MS";
+
+}
+header {
+    background-color: rgb(41, 39, 39);
+    margin: 0;
+    text-align: center;
+    padding:15px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 15px; 
+}
+
+
+header a:not(:last-child) {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-to-top {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+div#menu {
+width:1903px;
+margin:auto;
+height:450px;
+background-image: url('peixe1.png');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(152, 214, 255, 0.342);
+}
+
+#text-menu {
+    float: right;
+    width: 50%; 
+    padding: 90px; 
+    margin: 50px;
+}
+
+
+img {
+position: absolute;
+left: 36.5%;
+bottom: 90%;
+width: auto;
+height: 100px;
+}
+
+#content {
+    width: 1053px; 
+    margin: 100px 0 100px 450px;
+    min-height: 350px;
+    background-image: url('peixe.png');
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(152, 214, 255, 0.342);
+    
+}
+
+#text-content {
+    float: left;
+    width: 40%; 
+    padding: 45px; 
+}
+
+.titulo {
+    font-size: 70px; 
+    color: white;
+}

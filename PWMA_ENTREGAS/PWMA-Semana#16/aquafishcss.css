@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(48, 71, 82); 
+}
+
+header {
+    background-color: rgb(41, 39, 39); 
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+#foto {
+    position: absolute;
+    left: 38%;
+    top: -17%;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff; 
+    padding: 0 15px;
+}
+
+header a:not(:last-child) {
+    border-right: 1px solid #06d6a0; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.fish-card {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: white; 
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    border-radius: 15px;
+
+}
+
+.fish-card:first-child {
+    margin-right: 0;
+}
+
+.fish-card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.quadrado-de-fundo {
+    width: 80%;
+    max-width: 1500px;
+    background-color: rgb(41, 39, 39); 
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 50px;
+}
+
+.fish-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333; 
+}
+
+.fish-price {
+    font-size: 1.5rem;
+    color: #108d00; 
+    margin-top: 10px;
+}
+
+#rodape {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(41, 39, 39); 
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#voltar-ao-topo {
+    text-decoration: none;
+    color: #ffffff; 
+    margin-right: 20px;
+}
+
+.quadrado-de-fundo h1 {
+    font-size: 60px;
+    color: white; 
+    text-align: center;
+    margin: 20;
+    padding: 20px;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quadrado-de-fundo .container {
+    margin-top: 100px;
+}
